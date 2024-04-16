@@ -1,14 +1,16 @@
-# Map dimensions
 import os
 
-MAP_WIDTH = 20
-MAP_HEIGHT = 20
 
-os.system("clear")
+def draw_map(map_width, map_height):
+    os.system("clear")
 
-print("+--" + "---" * (MAP_WIDTH - 2) + "--+")
+    print("+--" + "---" * (map_width - 2) + "--+")
 
-for i in range(MAP_HEIGHT):
-    print("|  " + "   " * (MAP_WIDTH - 2) + "  |")
+    for i in range(map_height):
+        print("|  " + "   " * (map_width - 2) + "  |")
 
-print("+--" + "---" * (MAP_WIDTH - 2) + "--+")
+    print("+--" + "---" * (map_width - 2) + "--+")
+
+
+if __name__ == '__main__':
+    draw_map(20, 20)
