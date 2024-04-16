@@ -7,11 +7,11 @@ def main():
     map_height = 23
     head_pos = [0, 0]
 
-    print("+--" + "---" * (map_width - 2) + "--+")
+    print("+" + "---" * (map_width - 2) + "+")
 
     draw_head.draw_head(map_width, map_height, "X", head_pos)
 
-    print("+--" + "---" * (map_width - 2) + "--+")
+    print("+" + "---" * (map_width - 2) + "+")
 
     while True:
         draw_map.draw_map(map_width, map_height, head_pos)
