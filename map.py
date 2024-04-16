@@ -13,4 +13,4 @@ def draw_map(map_width, map_height):
 
 
 if __name__ == '__main__':
-    draw_map(20, 20)
+    draw_map(21, 21)
