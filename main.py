@@ -1,4 +1,4 @@
-import map
+import draw_map
 
 
 if __name__ == '__main__':
