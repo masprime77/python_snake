@@ -1,21 +1,25 @@
 import readchar
 
 
-def head_position(position):
+def head_position(map_width, map_height, head_pos):
     while True:
         k = readchar.readkey()
         if k == "w":
-            position[0] -= 1
-            return position
+            head_pos[0] -= 1
+            head_pos[0] %= map_height - 2
+            return head_pos
 
         if k == "d":
-            position[1] += 1
-            return position
+            head_pos[1] += 1
+            head_pos[1] %= map_width - 2
+            return head_pos
 
         if k == "s":
-            position[0] += 1
-            return position
+            head_pos[0] += 1
+            head_pos[0] %= map_height - 2
+            return head_pos
 
         if k == "a":
-            position[1] -= 1
-            return position
+            head_pos[1] -= 1
+            head_pos[1] %= map_width - 2
+            return head_pos
