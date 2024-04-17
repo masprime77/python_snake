@@ -1,6 +1,3 @@
-import os
-
-import draw_row
 import draw_map
 import initial_screen
 
@@ -11,8 +8,6 @@ def main():
     head_pos = [0, 0]
     food_position = []
     points = 0
-
-    os.system("clear")
 
     initial_screen.initial_screen(map_width, map_height, head_pos)
 
