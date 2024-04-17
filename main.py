@@ -9,14 +9,14 @@ def main():
     map_width = 10
     map_height = 10
     head_pos = [0, 0]
-    food_pos = [9, 9]
+    food_position = []
 
     os.system("clear")
 
-    initial_screen.initial_screen(map_width, map_height, head_pos, food_pos)
+    initial_screen.initial_screen(map_width, map_height, head_pos)
 
     while True:
-        draw_map.draw_map(map_width, map_height, head_pos)
+        draw_map.draw_map(map_width, map_height, head_pos, food_position)
 
 
 if __name__ == '__main__':
