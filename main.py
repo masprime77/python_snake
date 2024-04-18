@@ -3,8 +3,8 @@ import initial_screen
 
 
 def main():
-    map_width = 20
-    map_height = 20
+    map_width = 8
+    map_height = 8
     head_pos = [0, 0]
     food_position = []
     points = 0
