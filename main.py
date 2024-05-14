@@ -16,11 +16,11 @@ def main():
     os.system('clear')
 
     print("FELIZ CUMPLEAÑOS CHOLASOOOO!!!")
-    time.sleep(2)
+    time.sleep(1)
     print("TE AMO MUCHÍSIMO")
-    time.sleep(2)
+    time.sleep(1)
     print("ESPERO QUE TE GUSTE EL JUEGO")
-    time.sleep(2)
+    time.sleep(1)
     print("Usa WASD para moverte.\n"
           "Tienes que hacer 47 puntos!\n")
     input("Presiona ENTER para continuar...")
