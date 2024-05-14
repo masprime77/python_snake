@@ -1,2 +1,2 @@
 def score(points):
-    print("SCORE: {}".format(points))
+    print("SCORE: {}/47".format(points))
