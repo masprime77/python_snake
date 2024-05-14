@@ -3,11 +3,11 @@ import initial_screen
 
 
 def main():
-    map_width = 8
-    map_height = 8
+    map_width = 10
+    map_height = 10
     head_pos = [0, 0]
     food_position = []
-    points = 1
+    points = 0
     tail_location = []
 
     initial_screen.initial_screen(map_width, map_height, head_pos)

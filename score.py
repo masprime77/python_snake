@@ -1,2 +1,2 @@
 def score(points):
-    print("SCORE: {}".format(points - 1))
+    print("SCORE: {}".format(points))

@@ -5,6 +5,7 @@ import readchar
 def head_position(map_width, map_height, head_pos):
     while True:
         k = readchar.readkey()
+        # k = input("WASD/q")
 
         os.system("clear")
 
