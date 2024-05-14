@@ -20,7 +20,7 @@ def draw_map(map_width, map_height, prev_head_pos, food_location, points, tail_l
     if points == 47:
         finish_game.finish_game("hb_dad")
 
-    FOOD_CNT = 10
+    FOOD_CNT = 15
 
     while len(food_location) != FOOD_CNT:
         food_location.append(food_position.food_positions(map_width, map_height, new_head_pos, food_location,
