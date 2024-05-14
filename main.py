@@ -1,14 +1,29 @@
+import os
+import time
+
 import draw_map
 import initial_screen
 
 
 def main():
-    map_width = 10
-    map_height = 10
+    map_width = 15
+    map_height = 15
     head_pos = [0, 0]
     food_position = []
     points = 0
     tail_location = []
+
+    os.system('clear')
+
+    print("FELIZ CUMPLEAÑOS CHOLASOOOO!!!")
+    time.sleep(2)
+    print("TE AMO MUCHÍSIMO")
+    time.sleep(2)
+    print("ESPERO QUE TE GUSTE EL JUEGO")
+    time.sleep(2)
+    print("Usa WASD o las flechas para moverte.\n"
+          "Tienes que hacer 47 puntos!\n")
+    input("Presiona ENTER para continuar...")
 
     initial_screen.initial_screen(map_width, map_height, head_pos)
 
