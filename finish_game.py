@@ -44,7 +44,7 @@ def finish_game(cause):
         action = input("Play again? (Y/N) ")
 
     if action.upper() == "Y":
-        main.main()
+        main.replay()
     else:
         os.system("clear")
         exit()
