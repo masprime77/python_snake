@@ -30,7 +30,7 @@ def draw_map(map_width, map_height, prev_head_pos, food_location, points, tail_l
 
     print("+" + "---" * map_width + "+")
 
-    draw_row.draw_row(map_width, map_height, "X", new_head_pos, ".", food_location, "*", "$",
+    draw_row.draw_row(map_width, map_height, "R", new_head_pos, ".", food_location, "*", "$",
                       tail_location)
 
     print("+" + "---" * map_width + "+")
