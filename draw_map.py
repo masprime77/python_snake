@@ -17,7 +17,7 @@ def draw_map(map_width, map_height, prev_head_pos, food_location, points, tail_l
 
     points = new_points
 
-    if points == 5:
+    if points == 47:
         finish_game.finish_game("hb_dad")
 
     FOOD_CNT = 10
