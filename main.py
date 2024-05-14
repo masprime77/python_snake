@@ -21,7 +21,7 @@ def main():
     time.sleep(2)
     print("ESPERO QUE TE GUSTE EL JUEGO")
     time.sleep(2)
-    print("Usa WASD o las flechas para moverte.\n"
+    print("Usa WASD para moverte.\n"
           "Tienes que hacer 47 puntos!\n")
     input("Presiona ENTER para continuar...")
 
