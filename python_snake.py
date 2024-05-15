@@ -4,34 +4,35 @@ import random
 
 import readchar
 
+MAP_WIDTH = 10
+MAP_HEIGHT = 10
+
 
 def main():
-    map_width = 10
-    map_height = 10
-    head_pos = [0, 0]
+    head_position = [0, 0]
+    tails_positions = []
     food_position = []
     points = 0
-    tail_location = []
 
-    initial_screen(map_width, map_height, head_pos)
+    initial_screen(head_position)
 
-    draw_map(map_width, map_height, head_pos, food_position, points, tail_location)
+    draw_map(head_position, food_position, points, tails_positions)
 
 
-def initial_screen(map_width, map_height, head_pos):
+def initial_screen(head_pos):
     os.system("clear")
 
     score(0)
 
-    print("+" + "---" * map_width + "+")
+    print("+" + "---" * MAP_WIDTH + "+")
 
-    draw_row(map_width, map_height, "X", head_pos, " ", [5, 5], " ", " ", [6, 6])
+    draw_row("X", head_pos, " ", [5, 5], " ", " ", [6, 6])
 
-    print("+" + "---" * map_width + "+")
+    print("+" + "---" * MAP_WIDTH + "+")
 
 
-def draw_map(map_width, map_height, prev_head_pos, food_location, points, tail_location):
-    new_head_pos = head_position(map_width, map_height, prev_head_pos)
+def draw_map(prev_head_pos, food_location, points, tail_location):
+    new_head_pos = head_position_x_y(prev_head_pos)
 
     if new_head_pos in tail_location:
         finish_game("in_tail")
@@ -43,25 +44,25 @@ def draw_map(map_width, map_height, prev_head_pos, food_location, points, tail_l
     FOOD_CNT = 10
 
     while len(food_location) != FOOD_CNT:
-        food_location.append(food_positions(map_width, map_height, new_head_pos, food_location, tail_location))
+        food_location.append(new_food_positions(new_head_pos, food_location, tail_location))
 
     score(points)
 
-    print("+" + "---" * map_width + "+")
+    print("+" + "---" * MAP_WIDTH + "+")
 
-    draw_row(map_width, map_height, "X", new_head_pos, ".", food_location, "*", "$", tail_location)
+    draw_row("X", new_head_pos, ".", food_location, "*", "$", tail_location)
 
-    print("+" + "---" * map_width + "+")
+    print("+" + "---" * MAP_WIDTH + "+")
 
-    tail_location = tail_positions(prev_head_pos, new_points, tail_location)
+    tail_location = new_tail_positions(prev_head_pos, new_points, tail_location)
 
-    draw_map(map_width, map_height, new_head_pos, food_location, points, tail_location)
+    draw_map(new_head_pos, food_location, points, tail_location)
 
 
-def draw_row(map_width, map_height, head, head_pos, food, food_location, tail, tail_end, tail_location):
-    for y in range(map_height):
+def draw_row(head, head_pos, food, food_location, tail, tail_end, tail_location):
+    for y in range(MAP_HEIGHT):
         print("|", end="")
-        for x in range(map_width):
+        for x in range(MAP_WIDTH):
             if [y, x] == head_pos:
                 print(" " + head + " ", end="")
             elif [y, x] in food_location:
@@ -77,7 +78,7 @@ def draw_row(map_width, map_height, head, head_pos, food, food_location, tail, t
         print("|")
 
 
-def head_position(map_width, map_height, head_pos):
+def head_position_x_y(head_pos):
     while True:
         k = readchar.readkey()
         # k = input("WASD/q")  # To debug
@@ -88,25 +89,25 @@ def head_position(map_width, map_height, head_pos):
             exit(0)
         elif k in ["w", "\x1b[A"]:
             head_pos[0] -= 1
-            head_pos[0] %= map_height
+            head_pos[0] %= MAP_HEIGHT
         elif k in ["d", '\x1b[C']:
             head_pos[1] += 1
-            head_pos[1] %= map_width
+            head_pos[1] %= MAP_WIDTH
         elif k in ["s", '\x1b[B']:
             head_pos[0] += 1
-            head_pos[0] %= map_height
+            head_pos[0] %= MAP_HEIGHT
         elif k in ["a", '\x1b[D']:
             head_pos[1] -= 1
-            head_pos[1] %= map_width
+            head_pos[1] %= MAP_WIDTH
 
         return head_pos
 
 
-def food_positions(map_width, map_height, head_pos, food_location, tail_pos):
-    new_food_position = [random.randint(0, map_height - 1), random.randint(0, map_width - 1)]
+def new_food_positions(head_pos, food_location, tail_pos):
+    new_food_position = [random.randint(0, MAP_HEIGHT - 1), random.randint(0, MAP_WIDTH - 1)]
 
     while (new_food_position == head_pos) | (new_food_position in food_location) | (new_food_position in tail_pos):
-        new_food_position = [random.randint(0, map_height - 1), random.randint(0, map_width - 1)]
+        new_food_position = [random.randint(0, MAP_HEIGHT - 1), random.randint(0, MAP_WIDTH - 1)]
 
     return new_food_position
 
@@ -120,7 +121,7 @@ def pop_food(food_location, head_location, points):
     return points
 
 
-def tail_positions(head_pos, points, tails):
+def new_tail_positions(head_pos, points, tails):
     tails.append(copy.copy(head_pos))
 
     while points != len(tails):
