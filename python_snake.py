@@ -4,9 +4,12 @@ import random
 
 import readchar
 
+# Numeric constants
 MAP_WIDTH = 10
 MAP_HEIGHT = 10
 FOOD_AMOUNT = 10
+
+# Character constants
 HEAD = "X"
 TAIL = "O"
 TAIL_END = "$"
