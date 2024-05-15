@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8830b0bd-64a7-4f72-903e-9068a4166a8f" name="Changes" comment="Final version HB DAD">
-      <change beforePath="$PROJECT_DIR$/head_position.py" beforeDir="false" afterPath="$PROJECT_DIR$/head_position.py" afterDir="false" />
-    </list>
+    <list default="true" id="8830b0bd-64a7-4f72-903e-9068a4166a8f" name="Changes" comment="FINAL VERSION" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -298,7 +296,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715680425926</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="More food">
+      <option name="closed" value="true" />
+      <created>1715681256767</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1715681256767</updated>
+    </task>
+    <task id="LOCAL-00025" summary="FINAL VERSION">
+      <option name="closed" value="true" />
+      <created>1715681494989</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1715681494989</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
