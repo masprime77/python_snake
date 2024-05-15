@@ -80,7 +80,7 @@ def draw_row(map_width, map_height, head, head_pos, food, food_location, tail, t
 def head_position(map_width, map_height, head_pos):
     while True:
         k = readchar.readkey()
-        # k = input("WASD/q")
+        # k = input("WASD/q")  # To debug
 
         os.system("clear")
 
@@ -152,4 +152,4 @@ def finish_game(cause):
 
 
 if __name__ == '__main__':
-    main()  # Restructured git
+    main()
