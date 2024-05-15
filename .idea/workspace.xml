@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8830b0bd-64a7-4f72-903e-9068a4166a8f" name="Changes" comment="FINAL VERSION" />
+    <list default="true" id="8830b0bd-64a7-4f72-903e-9068a4166a8f" name="Changes" comment="Map dimensions as constants" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +39,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hb_dad" />
+        <entry key="$PROJECT_DIR$" value="3ffafe840cb470ed6a0a11b634c40fff1b23eabf" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -312,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715681494989</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Map dimensions as constants">
+      <option name="closed" value="true" />
+      <created>1715795514615</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1715795514615</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +337,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="hb_dad" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -357,7 +365,8 @@
     <MESSAGE value="Initial time changed" />
     <MESSAGE value="Progress bar" />
     <MESSAGE value="Final version HB DAD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final version HB DAD" />
+    <MESSAGE value="Map dimensions as constants" />
+    <option name="LAST_COMMIT_MESSAGE" value="Map dimensions as constants" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_snake$draw_map.coverage" NAME="draw_map Coverage Results" MODIFIED="1715670454333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
