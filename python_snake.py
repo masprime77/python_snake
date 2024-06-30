@@ -5,14 +5,14 @@ import random
 import readchar
 
 # Numeric constants
-MAP_WIDTH = 10
-MAP_HEIGHT = 10
-FOOD_AMOUNT = 10
+MAP_WIDTH = 8
+MAP_HEIGHT = 8
+FOOD_AMOUNT = 8
 
 # Character constants
-HEAD = "X"
-TAIL = "O"
-TAIL_END = "$"
+head = ">"
+TAIL = "*"
+TAIL_END = "S"
 FOOD = "."
 
 
@@ -64,7 +64,7 @@ def draw_row(new_head_position, food_positions, tail_positions):
         print("|", end="")
         for x in range(MAP_WIDTH):
             if [y, x] == new_head_position:
-                print(" " + HEAD + " ", end="")
+                print(" " + head + " ", end="")
             elif [y, x] in food_positions:
                 print(" " + FOOD + " ", end="")
             elif len(tail_positions) > 0 and [y, x] == tail_positions[0]:
@@ -80,6 +80,7 @@ def draw_row(new_head_position, food_positions, tail_positions):
 
 def head_position_x_y(old_head_position):
     while True:
+        global head
         k = readchar.readkey()
         # k = input("WASD/q")  # To debug
 
@@ -90,15 +91,19 @@ def head_position_x_y(old_head_position):
         elif k in ["w", "\x1b[A"]:
             old_head_position[0] -= 1
             old_head_position[0] %= MAP_HEIGHT
+            head = "^"
         elif k in ["d", '\x1b[C']:
             old_head_position[1] += 1
             old_head_position[1] %= MAP_WIDTH
+            head = ">"
         elif k in ["s", '\x1b[B']:
             old_head_position[0] += 1
             old_head_position[0] %= MAP_HEIGHT
+            head = "v"
         elif k in ["a", '\x1b[D']:
             old_head_position[1] -= 1
             old_head_position[1] %= MAP_WIDTH
+            head = "<"
 
         return old_head_position
 
