@@ -1,7 +1,6 @@
 import copy
 import os
 import random
-import time
 
 import readchar
 
