@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8830b0bd-64a7-4f72-903e-9068a4166a8f" name="Changes" comment="Test for constant movement: failed">
-      <change afterPath="$PROJECT_DIR$/test_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8830b0bd-64a7-4f72-903e-9068a4166a8f" name="Changes" comment="Fixed for arrow movement.">
       <change beforePath="$PROJECT_DIR$/python_snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_snake.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,25 +69,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python._posix_read.executor": "Debug",
-    "Python.draw_map.executor": "Debug",
-    "Python.head_position.executor": "Debug",
-    "Python.main.executor": "Debug",
-    "Python.score.executor": "Run",
-    "Python.test_1.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python._posix_read.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.draw_map.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.head_position.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.score.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_1.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -119,6 +117,7 @@
       <workItem from="1719774301539" duration="2048000" />
       <workItem from="1719826162403" duration="5538000" />
       <workItem from="1720783503531" duration="2373000" />
+      <workItem from="1720817446076" duration="376000" />
     </task>
     <task id="LOCAL-00001" summary="STABLE FOOD IMPLEMENTATION">
       <option name="closed" value="true" />
@@ -368,7 +367,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720784933652</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Test for constant movement: failed">
+      <option name="closed" value="true" />
+      <created>1720817490793</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1720817490793</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Fixed for arrow movement.">
+      <option name="closed" value="true" />
+      <created>1720817578011</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1720817578011</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +433,8 @@
     <MESSAGE value="More elements as constants. Change multiple variable names to better understanding" />
     <MESSAGE value="The head changes, according to the direction" />
     <MESSAGE value="Test for constant movement: failed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test for constant movement: failed" />
+    <MESSAGE value="Fixed for arrow movement." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed for arrow movement." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_snake$draw_map.coverage" NAME="draw_map Coverage Results" MODIFIED="1715670454333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

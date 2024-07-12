@@ -5,8 +5,8 @@ import random
 import readchar
 
 # Numeric constants
-MAP_WIDTH = 8
-MAP_HEIGHT = 8
+MAP_WIDTH = 15
+MAP_HEIGHT = 15
 FOOD_AMOUNT = 8
 
 # Character constants
