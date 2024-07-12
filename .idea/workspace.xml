@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8830b0bd-64a7-4f72-903e-9068a4166a8f" name="Changes" comment="More elements as constants. Change multiple variable names to better understanding">
+    <list default="true" id="8830b0bd-64a7-4f72-903e-9068a4166a8f" name="Changes" comment="The head changes, according to the direction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python_snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_snake.py" afterDir="false" />
     </list>
@@ -114,7 +114,8 @@
       <workItem from="1715679791987" duration="139000" />
       <workItem from="1715680078704" duration="430000" />
       <workItem from="1715680515426" duration="334000" />
-      <workItem from="1719774301539" duration="972000" />
+      <workItem from="1719774301539" duration="2048000" />
+      <workItem from="1719826162403" duration="5538000" />
     </task>
     <task id="LOCAL-00001" summary="STABLE FOOD IMPLEMENTATION">
       <option name="closed" value="true" />
@@ -340,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715796882221</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="The head changes, according to the direction">
+      <option name="closed" value="true" />
+      <created>1719775557733</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1719775557733</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +397,8 @@
     <MESSAGE value="Map dimensions as constants" />
     <MESSAGE value="More elements as constants. change multiple variable names to better understanding" />
     <MESSAGE value="More elements as constants. Change multiple variable names to better understanding" />
-    <option name="LAST_COMMIT_MESSAGE" value="More elements as constants. Change multiple variable names to better understanding" />
+    <MESSAGE value="The head changes, according to the direction" />
+    <option name="LAST_COMMIT_MESSAGE" value="The head changes, according to the direction" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_snake$draw_map.coverage" NAME="draw_map Coverage Results" MODIFIED="1715670454333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

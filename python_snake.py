@@ -1,6 +1,7 @@
 import copy
 import os
 import random
+import time
 
 import readchar
 
@@ -14,6 +15,9 @@ head = ">"
 TAIL = "*"
 TAIL_END = "S"
 FOOD = "."
+
+last_direction = "d"
+loop_duration = 1
 
 
 def main():
@@ -79,33 +83,34 @@ def draw_row(new_head_position, food_positions, tail_positions):
 
 
 def head_position_x_y(old_head_position):
-    while True:
-        global head
-        k = readchar.readkey()
-        # k = input("WASD/q")  # To debug
+    global head
+    global last_direction
 
-        os.system("clear")
+    last_direction = readchar.readchar()
+    # k = input("WASD/q")  # To debug
 
-        if k == "q":
-            exit(0)
-        elif k in ["w", "\x1b[A"]:
-            old_head_position[0] -= 1
-            old_head_position[0] %= MAP_HEIGHT
-            head = "^"
-        elif k in ["d", '\x1b[C']:
-            old_head_position[1] += 1
-            old_head_position[1] %= MAP_WIDTH
-            head = ">"
-        elif k in ["s", '\x1b[B']:
-            old_head_position[0] += 1
-            old_head_position[0] %= MAP_HEIGHT
-            head = "v"
-        elif k in ["a", '\x1b[D']:
-            old_head_position[1] -= 1
-            old_head_position[1] %= MAP_WIDTH
-            head = "<"
+    os.system("clear")
 
-        return old_head_position
+    if last_direction == "q":
+        exit(0)
+    elif last_direction in ["w", "\x1b[A"]:
+        old_head_position[0] -= 1
+        old_head_position[0] %= MAP_HEIGHT
+        head = "^"
+    elif last_direction in ["d", '\x1b[C']:
+        old_head_position[1] += 1
+        old_head_position[1] %= MAP_WIDTH
+        head = ">"
+    elif last_direction in ["s", '\x1b[B']:
+        old_head_position[0] += 1
+        old_head_position[0] %= MAP_HEIGHT
+        head = "v"
+    elif last_direction in ["a", '\x1b[D']:
+        old_head_position[1] -= 1
+        old_head_position[1] %= MAP_WIDTH
+        head = "<"
+
+    return old_head_position
 
 
 def generate_new_food_position(new_head_position, food_positions, tail_positions):
