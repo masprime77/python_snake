@@ -85,7 +85,7 @@ def head_position_x_y(old_head_position):
     global head
     global last_direction
 
-    last_direction = readchar.readchar()
+    last_direction = readchar.readkey()
     # k = input("WASD/q")  # To debug
 
     os.system("clear")
